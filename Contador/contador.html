@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="contador.js"></script>
+    <title>Contador</title>
+</head>
+
+<body>
+    <!--Elaborar uma página para o usúario inserir:
+        O valor de início
+        O valor final
+        E o incremento
+        Em seguida será mostrado os valores
+        -Não permitir valor em branco no valorde início e fim
+        -Incremento min:1, não permitir =0 -se acontecer trocar por 1
+    -->
+    <header>
+        <h1>Contador Crescente</h1>
+    </header>
+    <section id="main">
+        <div>
+            <form>
+                Valor de Início:
+                <input type="number" name="inicio" id="inicio">
+                Valor Final:
+                <input type="number" name="fim" id="fim"><br>
+                Incremento:
+                <input type="number" name="incremento" id="incremento">
+                <input type="button" value="Contar" onclick="contar()">
+            </form>
+        </div>
+        <div id="resultado"> 
+        </div>
+    </section>
+    <footer>
+        &copy Felype | 2019
+    </footer>
+</body>
+
+</html>
