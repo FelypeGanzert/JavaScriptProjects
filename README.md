@@ -1,2 +1,2 @@
-# ProjectsModernJSCourse
-Projects builds in Modern JavaScript Course of Bred Traversy on Udemy
+# 
+Small projects built during courses
