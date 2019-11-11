@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="verificadorIdades.js"></script>
+    <title>Verificador de Idades</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(23, 148, 206);
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        img {
+            width: 350px;
+            height: 350px;
+            clip-path: circle(40% at 50% 50%);
+        }
+
+        div#principal {
+            padding: 25px;
+            width: 50%;
+            min-width: 500px;
+            background-color: white;
+            margin: auto;
+            border-radius: 30px;
+            box-shadow: 0px 0px 40px 2px rgba(39, 38, 38, 0.924);
+        }
+        form{
+            font-size: 15px;
+        }
+        input[type=number]{
+            width: 250px;
+            height: 15px;
+            margin-bottom: 10px;
+        }
+        input[type=button]{
+            border:none;
+            padding: 10px;
+            margin: 15px;
+            font-size: 17px;
+            width: 120px;
+            transition-duration: 0.6s;
+            color: white;
+            background-color: rgb(8, 173, 179);
+        }
+        input[type=button]:hover{
+            background-color: rgb(5, 100, 104);
+        }
+        #resultadoVerificacao{
+            font-size: 15px;
+            text-align: center;
+        }
+        #resultadoVerificacao h2, #resultadoVerificacao img{
+            margin: 0 0 -35px 0;
+
+        }
+        footer {
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idades</h1>
+    </header>
+
+    <div id="principal">
+
+        <form>
+            <label for="anoNasc">Ano de Nascimento:</label>
+            <input type="number" name="anoNasc" id="anoNasc" value="1990"><br>
+            Sexo:
+            <input type="radio" name="sexo" id="sexoM" value="m">
+            <label for="sexoM">Masculino</label>
+            <input type="radio" name="sexo" id="sexoF" value="f">
+            <label for="sexoF">Feminino</label><br>
+            <input type="button" value="Verificar" onclick="verificar()">
+
+        </form>
+
+        <div id="resultadoVerificacao">
+        </div>
+    </div>
+
+    <footer>
+        &COPY; Felype Ganzert
+    </footer>
+</body>
+
+</html>
