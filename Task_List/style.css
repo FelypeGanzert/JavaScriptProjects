@@ -1,0 +1,128 @@
+/*Global */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*Container*/
+.container{
+    min-width: 450px;
+    width: 70%;
+    margin: auto;
+    border: solid rgb(116, 112, 112, 0.2) 2px;
+    box-shadow: rgba(92, 92, 94, 0.4) 1px 5px 5px;
+}
+
+.card-content{
+    padding: 20px;
+    border-bottom: solid rgba(163, 161, 161, 0.459) 3px;
+}
+.card-content:last-child{
+    border: none;
+}
+.card{
+    width: 100%;
+}
+
+/*Titles*/
+
+h1{
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+h2{
+    color: rgb(54, 54, 54);
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/*inputs*/
+input{
+    display: block;
+    border: none;
+    background-color: unset;
+    outline: none;
+}
+.lblInput{
+    color: grey;
+    font-size: 75%;
+}
+
+input[type=text]{
+    width: 100%;
+    border-bottom: solid rgb(75, 102, 98) 2px;
+    padding: 5px 0px 10px 0px;
+    margin: 5px 0px 25px 0px;
+}
+input[type=text]:focus{
+    border: none;
+    border-bottom: solid rgb(46, 182, 159) 2px;
+    
+    transition-duration: 0.6s;
+}
+input[type=submit]#btnAdd{
+    background-color: rgb(58, 158, 141);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+input[type=submit]#btnAdd:hover{
+    background-color: rgb(34, 165, 132);
+    box-shadow: rgba(92, 92, 94, 0.4) 2px 3px 5px;
+}
+input[type=button]#btnClear{
+    background-color: rgba(2, 0, 0, 0.815);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+input[type=button]#btnClear:hover{
+    background-color: rgba(39, 1, 1, 0.993);
+    box-shadow: rgba(92, 92, 94, 0.4) 2px 3px 5px;
+}
+
+/*Lists*/
+ul{
+    margin: 5px 0px 15px 0px;
+    border: solid rgb(238, 238, 238) 2px;
+    border-radius: 10px;
+}
+li{
+    margin: -2px;
+    list-style: none;
+    padding: 10px 10px 10px 20px;
+    border-bottom: solid rgb(238, 238, 238) 2px;
+}
+li.ok{
+    text-decoration-line: line-through;
+    color: grey;
+    background-color: rgb(221, 221, 221);
+}
+li:last-child{
+    border: none;
+}
+li:hover{
+    background-color: #cde4de;
+}
+/* li:nth-child(odd){ //Iria pegar todos os pares
+    background-color: rgb(16, 141, 190);
+    color: white;
+} */
+a.delete-item{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(233, 126, 76);
+    font-weight: bolder;
+}
+a.delete-item:hover{
+    color: rgb(167, 10, 4);
+    text-shadow: rgba(88, 0, 0, 0.548) 1px 1px 5px;
+}

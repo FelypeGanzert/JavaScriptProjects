@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Task List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card-content">
+            <div class="card">
+                <h1 id="title">Task List</h1>
+                <form id="formNew">
+                    <label for="inNewTask" class="lblInput">New Task</label>
+                    <input type="text" name="inNewTask" id="inNewTask" placeholder="Insert the new task">
+                    <input type="submit" value="ADD TASK" id="btnAdd">
+                </form>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="card">
+                <h2 id="task-title">Tasks</h2>
+                <form autocomplete="off">
+                    <label for="filter" class="lblInput">Filter Tasks</label>
+                    <input type="text" name="filter" id="filter" placeholder="">
+                </form>
+                <ul class="collection"></ul>
+                <input type="button" value="CLEAR TASK" id="btnClear">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let deleteIcons = document.getElementsByClassName('delete-item');
+        for (let i = 0; i < deleteIcons.length; i++) {
+            deleteIcons[i].text = 'X';
+        }
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
