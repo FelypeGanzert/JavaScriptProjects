@@ -1,0 +1,99 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.container{
+    width: 70%;
+    margin: 30px auto 100px auto;
+}
+
+header h1{
+    text-align: center;
+    border-bottom:  4px solid rgb(231, 116, 8);
+}
+
+/* Error message */
+.alert{
+    display: block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
+}
+.red{
+    background-color: rgb(250, 15, 15);
+}
+.green{
+    background-color: rgb(5, 195, 84);
+}
+
+
+/* Table formats */
+table{
+    width: 100%;
+}
+td, th, table{
+    border-bottom: 1px solid #706f6f;
+    padding: 5px;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: #ebe6e6;
+}
+#table-head{
+    background-color: #7c7a7a;
+    color: white;
+}
+
+/* Form and inputs */
+form h2{
+    margin: 5px;
+}
+form{
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(231, 116, 8);
+}
+
+input[type=text]{
+    display: block;
+    margin: 10px 0px;
+    padding: 5px;
+    width: 70%
+}
+
+input[type=submit]{
+    padding: 5px 20px;
+    background-color: rgb(8, 142, 231);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+input[type=submit]:hover{
+    background-color: rgb(7, 101, 163);
+    box-shadow: rgb(85, 82, 85) 1px 2px 5px;
+}
+
+.delete-book{
+    text-decoration: none;
+    color:red;
+    font-weight: bolder;
+}
+.delete-book:hover{
+    cursor: pointer;
+    color: rgb(172, 9, 9);
+}
+
+span#info{
+    display: block;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .container, input[type=text]{
+        width: 95%;
+    }
+
+}
+
