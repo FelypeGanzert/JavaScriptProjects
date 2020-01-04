@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Lyric Search</h1>
+        <form id='musicSearch'>
+            <label for="music">Music:</label>
+            <input type="text" name="music" id="music" autocomplete="off">
+            <br>
+            <label for="artist">Artist:</label>
+            <input type="text" name="artist" id="artist"  autocomplete="off">
+            <input type="submit" value="Search">
+        </form>
+        <div id="lyric-container">
+            <span id="output-music"></span>
+            <span id="output-artist"></span>
+            <div id="lyric"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
