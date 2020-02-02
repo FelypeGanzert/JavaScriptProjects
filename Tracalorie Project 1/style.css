@@ -92,6 +92,7 @@ span#total-calories{
     padding: 7px;
     border: solid #cecece 1px;
     margin: -1px 0px;
+    animation-duration:  5s;
 }
 .meals ul li:hover{
     background-color: #e9e9e9;

@@ -42,6 +42,7 @@ function addMeal() {
     let name = document.getElementById('meal-name').value;
     let calories = document.getElementById('calories').value;
     meals.addMeal(name, calories);
+    resetForm();
     updateDependeces();
 }
 function editMeal(name, calories, id) {

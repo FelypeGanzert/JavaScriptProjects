@@ -62,8 +62,6 @@ class Meals {
         this.meals = [];
         this.id = 0;
     }
-
-
 }
 
 class Meal {
