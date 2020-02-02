@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tracalorie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tracalorie</h1>
+        <button id="clear-all">CLEAR ALL</button>
+    </header>
+
+    <div class="container edit">
+        <h3>Add Meal/Food Item</h3>
+        <form>
+            <input type="number" name="id" id="id" style="display: none;">
+            <label for="meal-name">Meal</label>
+            <input type="text" name="meal-name" id="meal-name" placeholder="Add item" autocomplete="off">
+            <label for="calories">Calories</label>
+            <input type="number" name="calories" id="calories" min="0" placeholder="Add Calories">
+
+            <div id="new-meal-buttons">
+                <button type="submit" id="add-meal">
+                    <i class=" material-icons">add_box</i> ADD MEAL
+                </button>
+            </div>
+
+            <div id="edit-meal-buttons">
+                <button type="submit" id="update-meal">
+                    <i class=" material-icons">save</i> UPDATE MEAL
+                </button>
+                <button type="submit" id="delete-meal">
+                    <i class="material-icons">delete</i> DELETE MEAL
+                </button>
+                <button type="submit" id="back">
+                    <i class=" material-icons">keyboard_backspace</i> BACK
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <span id="total-calories">Total Calories: 0</span>
+
+    <div class="container meals">
+        <ul id="meals-list">
+        </ul>
+    </div>
+
+    <script src="LocalStorage.js"></script>
+    <script src="Meal.js"></script>
+    <script src="UI.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
