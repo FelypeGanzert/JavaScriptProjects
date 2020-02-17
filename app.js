@@ -70,7 +70,6 @@ function addProjects(){
     projectsData.forEach(p => {
         let output = `
             <div class="project">
-                //<a href=".${p.url}"> //If you will run this offline descoment this
                   <a href="${p.url}">
                     <img src="./imgs/${p.img}.png">
                     ${p.name}
